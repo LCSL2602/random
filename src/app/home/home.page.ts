@@ -1,25 +1,29 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
   public flagMsg:boolean = true
   public num:any = ''
   public list_addend:any[] = []
   public countMark:number = 0
   public time = new Date()
+  public sizeScreen:number
 
   constructor() {}
 
-  clean(){
+  ngOnInit(): void {
+    this.sizeScreen = screen.width
+  }
+
+  clean():void {
     this.list_addend = []
     this.num = 0
   }
 
-  add_random(){
+  add_random():void {
     this.countMark++
     this.flagMsg = false
     this.time = new Date()

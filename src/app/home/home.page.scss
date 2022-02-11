@@ -41,3 +41,22 @@ body{
     font-size: 150px;
   }
 }
+@media screen and (min-width: 680px) {
+  .plus-ultra{
+    font-size: 60px;
+  }
+  
+  .num-plus-ultra{
+  font-size: 130px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .plus-ultra{
+    font-size: 50px;
+  }
+  
+  .num-plus-ultra{
+  font-size: 100px;
+  }
+}
+

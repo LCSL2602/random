@@ -1,24 +1,24 @@
 <div class="container-fluid  full_screen " >
-  <div class="row">
-      <div class="col-sm-3 ">
+  <div id="rowCentral" class="row">
+      <div *ngIf="sizeScreen > 575" class="col-sm-3">
            <div class="row">
-               <div class="col-sm-12 mt-2">
+               <div class="col-sm-12 text-center mt-2">
                    <img class="size-img" src="../assets/photo_2021-12-16_09-28-45.jpg" alt="">
                </div>
            </div>
       </div>
-      <div class="col-sm-6  ">
+      <div class="col-sm-6">
           <div class="row">
-           <div class="col-sm-12  p-5">
+           <div class="col-sm-12 text-center p-5">
                <img class="size-img" src="../assets/good_travel.png" alt="">
            </div>
           </div>
-         <div class="row">
+         <div class="row ">
            <div *ngIf="flagMsg" class=" mt-1 col-sm-12 text-center">
                <img  src="../assets/cuadro-vacio.png" alt="">
            </div>
            <div *ngIf="!flagMsg" class="  mt-5 col-sm-12 text-center">
-               <h1 :class="[ num === 5 ? 'plus-ultra' : 'num-plus-ultra' ]" >
+               <h1 [ngClass]="[ num === 5 ? 'plus-ultra' : 'num-plus-ultra' ]" >
                    {{ num == 5 ? '¡REVISIÓN!' : num }}
                </h1>
                <h5 class="time-size" >
@@ -35,7 +35,7 @@
                </div>
          </div>
       </div>
-      <div class="col-sm-3">
+      <div *ngIf="sizeScreen > 575" class="col-sm-3 ">
           <div class="row">
               <div class="col-sm-12 text-center mt-2">
                   <img class="size-img" src="../assets/Logo-vigilantia.jpg" alt="">
