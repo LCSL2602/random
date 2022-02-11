@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "airport-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

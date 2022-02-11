@@ -1,5 +1,7 @@
 {
   "name": "airport-app",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
