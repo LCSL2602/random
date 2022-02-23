@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "airport-app",
+	"appId": "net.vigilantia.emqu.random-system",
+	"appName": "Sistema aleatorio",
 	"webDir": "www",
 	"bundledWebRuntime": false
 }
