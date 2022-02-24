@@ -6,10 +6,11 @@
   font-size: 80px;
 }
 .plus-ultra{
-  font-size: 60px;
+  font-size: 62px !important ;
+  color: rgb(144, 31, 31);
 }
 .num-plus-ultra{
-  font-size: 180px;
+  font-size: 200px !important ;
 }
 .mt-10{
   margin-top: 120px !important;
@@ -31,6 +32,11 @@ body{
 }
 .time-size{
   font-size: 40px;
+}
+
+.airport-img{
+  width: 200px;
+  height: 100px;
 }
 
 @media screen and (min-width: 800px) {
