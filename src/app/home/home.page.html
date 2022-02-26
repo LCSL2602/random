@@ -17,7 +17,7 @@
            <div *ngIf="flagMsg" class=" mt-1 col-sm-12 text-center">
                <img  src="../assets/cuadro-vacio.png" alt="">
            </div>
-           <div *ngIf="!flagMsg" class="  mt-5 col-sm-12 text-center">
+           <div *ngIf="!flagMsg" class="mt-5 col-sm-12 text-center">
                <h1 [ngClass]="[ num === 5 ? 'plus-ultra' : 'num-plus-ultra' ]" >
                    {{ num == 5 ? 'REVISIÓN' : num }}
                </h1>
@@ -26,10 +26,10 @@
                </h5>
             </div>
          </div>
-         <div class="text-center mt-3 position_medio ">
+         <div class="text-center mt-3" [class.position_medio]="sizeScreen > 575" >
              <button type="button" (click)="add_random()" class="btn big-btn btn-orange rounded-circle "> <i class="bi bi-plus-lg"></i></button>
          </div>
-         <div class="row">
+         <div *ngIf="sizeScreen > 575" class="row">
                <div class="col-sm-12 text-center p-3 ml-3 mb-10 position_down ">
                    <img class="airport-img" src="../assets/aeropuerto-mexico.jpg" alt="">
                </div>
