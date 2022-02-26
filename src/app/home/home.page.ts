@@ -33,28 +33,26 @@ export class HomePage implements OnInit {
     this.flagMsg = false
     this.time = new Date()
 
-    if(this.countMark === 10){
+    if(this.countMark === 21){
       this.numToRandom = 6
       this.counterRevision = 0
       this.countMark = 0
-    }else{
-        if(this.list_addend.length === 4){
-          this.clean()
+    }
+
+    if(this.list_addend.length === 4) this.clean() 
+    
+    while(this.list_addend.length < 4){
+      const numRandom = this.generateNumber()
+      if(this.list_addend.indexOf(numRandom) === -1){
+        if(numRandom !== 5){
+          this.list_addend.push(numRandom)
+        }else{
+          this.counterRevision++
+          if(this.counterRevision === 1) this.numToRandom = 5
         }
-        while(this.list_addend.length < 4){
-            const numRandom = this.generateNumber()
-            if(this.list_addend.indexOf(numRandom) === -1){
-              if(numRandom !== 5){
-                this.list_addend.push(numRandom)
-              }else{
-                this.counterRevision++
-                if(this.counterRevision === 1) 
-                  this.numToRandom = 5
-              }
-              this.num = numRandom
-              break
-            }
-        }
+        this.num = numRandom
+        break
+      }
     }
 }
 
