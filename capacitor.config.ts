@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'airport-app',
+  appId: 'net.vigilantia.emqu.random_system_LCSL',
+  appName: 'Sistema aleatorio',
   webDir: 'www',
   bundledWebRuntime: false
 };

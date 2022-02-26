@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "io.ionic.starter",
+  "applicationId": "net.vigilantia.emqu.random_system_LCSL",
   "variantName": "release",
   "elements": [
     {

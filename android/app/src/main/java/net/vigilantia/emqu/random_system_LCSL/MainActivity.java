@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package net.vigilantia.emqu.random_system_LCSL;
 
 import com.getcapacitor.BridgeActivity;
 

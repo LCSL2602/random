@@ -1,17 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-      debug {
-        storeFile file('C:\\Users\\Luis\\key-store.jks')
-        storePassword '123456'
-        keyAlias 'six'
-        keyPassword '123456'
-      }
-    }
-  compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "io.ionic.starter"
+        applicationId "net.vigilantia.emqu.random_system_LCSL"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
