@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
   public time = new Date()
   public sizeScreen:number
   public counterRevision:number = 0
-  public numToRandom:number = 6
+  public numToRandom:number = 4
   constructor() {}
 
   ngOnInit(): void {
@@ -34,21 +34,21 @@ export class HomePage implements OnInit {
     this.time = new Date()
 
     if(this.countMark === 21){
-      this.numToRandom = 6
+      this.numToRandom = 4
       this.counterRevision = 0
       this.countMark = 0
     }
 
-    if(this.list_addend.length === 4) this.clean() 
+    if(this.list_addend.length === 2) this.clean() 
     
-    while(this.list_addend.length < 4){
+    while(this.list_addend.length < 2){
       const numRandom = this.generateNumber()
       if(this.list_addend.indexOf(numRandom) === -1){
-        if(numRandom !== 5){
+        if(numRandom !== 3){
           this.list_addend.push(numRandom)
         }else{
           this.counterRevision++
-          if(this.counterRevision === 1) this.numToRandom = 5
+          if(this.counterRevision === 1) this.numToRandom = 3
         }
         this.num = numRandom
         break
