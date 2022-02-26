@@ -7,7 +7,7 @@
                </div>
            </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 full_screen ">
           <div class="row">
            <div class="col-sm-12 text-center p-5">
                <img class="size-img" src="../assets/good_travel.png" alt="">
@@ -19,18 +19,18 @@
            </div>
            <div *ngIf="!flagMsg" class="  mt-5 col-sm-12 text-center">
                <h1 [ngClass]="[ num === 5 ? 'plus-ultra' : 'num-plus-ultra' ]" >
-                   {{ num == 5 ? '¡REVISIÓN!' : num }}
+                   {{ num == 5 ? 'REVISIÓN' : num }}
                </h1>
                <h5 class="time-size" >
                    {{ time.toDateString() }} {{ time.toLocaleTimeString() }}
                </h5>
             </div>
          </div>
-         <div class="text-center mt-3">
+         <div class="text-center mt-3 position_medio ">
              <button type="button" (click)="add_random()" class="btn big-btn btn-orange rounded-circle "> <i class="bi bi-plus-lg"></i></button>
          </div>
          <div class="row">
-               <div class="col-sm-12 text-center p-3 mt-5 ">
+               <div class="col-sm-12 text-center p-3 ml-3 mb-10 position_down ">
                    <img class="airport-img" src="../assets/aeropuerto-mexico.jpg" alt="">
                </div>
          </div>
@@ -39,6 +39,12 @@
           <div class="row">
               <div class="col-sm-12 text-center mt-3">
                   <img class="size-img" src="../assets/Logo-vigilantia.jpg" alt="">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12 p-4 position_down">
+                  <h6 class="m-0" > Powered by </h6>
+                  <img class="size-img" src="./../../assets/EmQu-color-logo.png" >
               </div>
           </div>
       </div>

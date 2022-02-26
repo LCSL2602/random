@@ -6,15 +6,30 @@
   font-size: 80px;
 }
 .plus-ultra{
-  font-size: 62px !important ;
+  margin-top: 80px;
+  font-size: 80px !important ;
   color: rgb(144, 31, 31);
+  letter-spacing:-0.1em !important ;
 }
 .num-plus-ultra{
   font-size: 200px !important ;
+  margin: 0%;
 }
 .mt-10{
   margin-top: 120px !important;
 }
+.position_down{
+  position: absolute;
+  bottom: 5% !important;
+}
+
+.position_medio{
+  position: absolute;
+  bottom: 30% !important;
+  left: 50% !important;
+  margin-left: -25px;
+}
+
 body{
   color: black;
 }
@@ -37,6 +52,10 @@ body{
 .airport-img{
   width: 200px;
   height: 100px;
+}
+
+.mb-10{
+  margin-bottom: 80px !important;
 }
 
 @media screen and (min-width: 800px) {
